@@ -75,7 +75,7 @@ const MainContent = () => {
 
         try {
           const response = await axios.get(
-            `https://api.aladhan.com/v1/timingsByCity/14-03-2024?city=${city.api}&country=${country}&method=1`
+            `https://api.aladhan.com/v1/timingsByCity/14-03-2024?city=${city.api}&country=${country}&method=13`
           );
           setPrayerTimes(response.data.data.timings);
         } catch (error) {
