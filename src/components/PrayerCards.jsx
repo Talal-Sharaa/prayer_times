@@ -51,6 +51,7 @@ export default function PrayerCards({ name, time, image }) {
             sx={{ fontSize: "16px", color: "darkgray" }}
             onClick={() => {
               navigator.clipboard.writeText(`${name} ${time}`);
+              alert("تم النسخ!");
             }}
           >
             نسخ

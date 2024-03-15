@@ -38,6 +38,8 @@ const LocationButton = ({ onCountryCitySelect }) => {
         );
         if (countryData) {
           onCountryCitySelect(countryData);
+        } else {
+          alert("بلدك غير مدعوم حالياً!");
         }
       });
     } catch (error) {
